@@ -5,6 +5,7 @@
 package predictor.application;
 
 import java.nio.file.Paths;
+import java.util.Properties;
 import predictor.evaluation.ClassifierEvaluation;
 import predictor.io.Reader;
 import predictor.io.Writer;
@@ -31,6 +32,11 @@ public class Controller {
         Instances training = Reader.readTraining(code);
         Instances testing = Reader.readTesting(code);
         
+        Properties meta = Reader.readMeta(code);
+  
+        training.setClass(training.attribute(meta.getProperty("OUTPUT_HEAD")));
+        testing.setClass(testing.attribute(meta.getProperty("OUTPUT_HEAD")));
+
         Classifier classifier = SMORegLearner.learn(training);
         
         Writer.writeEvaluationResult(code, ClassifierEvaluation.evaluate(classifier, testing));

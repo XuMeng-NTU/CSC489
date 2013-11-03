@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<components>
+    <component>
+        <name>DATE</name>
+        <repr>preparer.cleaners.Date</repr>
+        <parameters>
+            <parameter>
+                <name>MAX_DAY_SPAN</name>
+                <value>java.lang.Integer</value>
+            </parameter>
+        </parameters>
+    </component>
+    <component>
+        <name>PRICE</name>
+        <repr>preparer.cleaners.Price</repr>
+        <parameters>
+            <parameter>
+                <name>MAX_PRICE_DIFF</name>
+                <value>java.lang.Double</value>
+            </parameter>
+        </parameters>
+    </component>    
+</components>

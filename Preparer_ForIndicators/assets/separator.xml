@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<components>
+    <component>
+        <name>WINDOW</name>
+        <repr>preparer.separators.Window</repr>
+        <parameters>
+            <parameter>
+                <name>INPUT</name>
+                <value>java.lang.Integer</value>
+            </parameter>
+            <parameter>
+                <name>GRAY</name>
+                <value>java.lang.Integer</value>
+            </parameter>
+            <parameter>
+                <name>OUTPUT</name>
+                <value>java.lang.Integer</value>
+            </parameter>
+        </parameters>        
+    </component>
+</components>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<components>
+    <component>
+        <name>COLUMN</name>
+        <repr>preparer.selectors.Column</repr>
+        <parameters>
+            <parameter>
+                <name>INPUT</name>
+                <value>java.lang.String</value>
+            </parameter>
+            <parameter>
+                <name>OUTPUT</name>
+                <value>java.lang.String</value>
+            </parameter>
+        </parameters>
+    </component>
+</components>

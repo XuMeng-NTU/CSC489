@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<components>
+    <component>
+        <name>LINEAR</name>
+        <repr>preparer.normalizers.Linear</repr>
+        <parameters>
+            <parameter>
+                <name>FIELDS</name>
+                <value>java.lang.String</value>
+            </parameter>
+            <parameter>
+                <name>UPPER_BOUND</name>
+                <value>java.lang.Integer</value>
+            </parameter>
+            <parameter>
+                <name>LOWER_BOUND</name>
+                <value>java.lang.Integer</value>
+            </parameter>
+        </parameters>        
+    </component>
+    <component>
+        <name>SIGN_PRESERVED_LINEAR</name>
+        <repr>preparer.normalizers.SignPreservedLinear</repr>
+        <parameters>
+            <parameter>
+                <name>FIELDS</name>
+                <value>java.lang.String</value>
+            </parameter>
+            <parameter>
+                <name>UPPER_BOUND</name>
+                <value>java.lang.Integer</value>
+            </parameter>
+            <parameter>
+                <name>LOWER_BOUND</name>
+                <value>java.lang.Integer</value>
+            </parameter>
+        </parameters>          
+    </component>    
+</components>

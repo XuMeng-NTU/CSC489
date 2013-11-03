@@ -26,7 +26,7 @@ public class SMORegLearner {
             Classifier classifier = new SMOreg();
             String regOptimizerOption = "-L 0.001 -W 1 -P 1.0E-12 -T 0.001 -V";
             String kernal = "-C 250007 -E 10.0 -L";
-            String SMOoption = "-C 50 -N 2";
+            String SMOoption = "-C 500 -N 0";
             
             RegOptimizer regOptimizer = new RegSMOImproved();
             regOptimizer.setOptions(Utils.splitOptions(regOptimizerOption));
