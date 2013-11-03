@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:jxb="http://java.sun.com/xml/ns/jaxb"
+           jxb:version="2.0"
+           elementFormDefault="qualified">
+
+    <xs:include schemaLocation="G:\Github\CSC489\Shared\assets\jaxb\adapters.xsd" />
+    
+    <xs:element name="registry" type="Registry" />
+    
+    <xs:complexType name="Registry">
+        <xs:all>
+            <xs:element name="configurations" type="Configurations" />
+            <xs:element name="components" type="Components" />
+            <xs:element name="data" type="Data"/>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:complexType name="Configurations">
+        <xs:sequence>
+            <xs:element name="configuration" type="Configuration" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>     
+    </xs:complexType>
+    
+    <xs:complexType name="Configuration">
+        <xs:all>
+            <xs:element name="resources" type="Resources" />
+        </xs:all>    
+        <xs:attribute name="name" type="xs:string"/>   
+        <xs:attribute name="repr" type="stringToClass"/>
+    </xs:complexType>   
+        
+    <xs:complexType name="Components">
+        <xs:sequence>
+            <xs:element name="component" type="Component" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>     
+    </xs:complexType>
+    
+    <xs:complexType name="Component">
+        <xs:all>
+            <xs:element name="resources" type="Resources" />
+        </xs:all>    
+        <xs:attribute name="name" type="xs:string"/>   
+        <xs:attribute name="repr" type="stringToClass"/>
+    </xs:complexType>                
+
+    <xs:complexType name="Data">
+        <xs:all>
+            <xs:element name="resources" type="Resources" />
+        </xs:all>    
+    </xs:complexType>   
+    
+    <xs:complexType name="Resources">  
+        <xs:sequence>
+            <xs:element name="resource" type="Resource" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>   
+    
+    <xs:complexType name="Resource">
+        <xs:all>
+            <xs:element name="path" type="stringToPath" />
+        </xs:all>
+        <xs:attribute name="name" type="xs:string"/>     
+    </xs:complexType>    
+
+</xs:schema>

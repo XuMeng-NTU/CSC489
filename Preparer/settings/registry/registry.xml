@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<registry>
+    
+    <configurations>
+        
+        <configuration name="DATASET" repr="template.configurations.Configurations">
+            <resources>
+                <resource name="DEFAULT">
+                    <path>assets/dataset.xml</path>
+                </resource>     
+            </resources>   
+        </configuration>
+        
+    </configurations>  
+           
+    <components>  
+              
+        <component name="CLEANER" repr="template.components.Components">
+            <resources>
+                <resource name="DEFAULT">
+                    <path>assets/cleaner.xml</path>
+                </resource>     
+            </resources>   
+        </component> 
+
+        <component name="INDICATOR" repr="template.components.Components">
+            <resources>
+                <resource name="DEFAULT">
+                    <path>assets/indicator.xml</path>
+                </resource>      
+            </resources>  
+        </component> 
+
+        <component name="TRANSFORMER" repr="template.components.Components">
+            <resources>
+                <resource name="DEFAULT">
+                    <path>assets/transformer.xml</path>
+                </resource>       
+            </resources> 
+        </component> 
+
+        <component name="SEPARATOR" repr="template.components.Components">
+            <resources>
+                <resource name="DEFAULT">
+                    <path>assets/separator.xml</path>
+                </resource>     
+            </resources>   
+        </component>  
+        
+        <component name="NORMALIZER" repr="template.components.Components">
+            <resources>
+                <resource name="DEFAULT">
+                    <path>assets/normalizer.xml</path>
+                </resource>     
+            </resources>   
+        </component>   
+         
+        <component name="SELECTOR" repr="template.components.Components">
+            <resources>
+                <resource name="DEFAULT">
+                    <path>assets/selector.xml</path>
+                </resource>     
+            </resources>   
+        </component>  
+         
+        <component name="COMPARER" repr="template.components.Components">
+            <resources>
+                <resource name="DEFAULT">
+                    <path>assets/comparer.xml</path>
+                </resource>     
+            </resources>   
+        </component>            
+    </components>     
+
+    <data>
+        <resources>
+            <resource name="ORIGINAL">
+                <path>G:\Github\CSC489\Shared\data\original</path>
+            </resource>
+            <resource name="RESULT">
+                <path>G:\Github\CSC489\Shared\data\preparation</path>
+            </resource>
+            <resource name="VALIDATION">
+                <path>G:\Github\CSC489\Shared\data\validation</path>
+            </resource> 
+            <resource name="PREDICTION">
+                <path>G:\Github\CSC489\Shared\data\prediction</path>
+            </resource>
+        </resources>                                  
+    </data>    
+
+</registry>

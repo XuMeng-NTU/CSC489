@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:jxb="http://java.sun.com/xml/ns/jaxb"
+           jxb:version="2.0"
+           elementFormDefault="qualified">
+
+    <xs:include schemaLocation="G:\Github\CSC489\Shared\assets\jaxb\adapters.xsd" />
+    
+    <xs:element name="definitions" type="Definitions" />
+    
+    <xs:complexType name="Definitions">
+        <xs:sequence>
+            <xs:element name="definition" type="Definition" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="Definition">
+        <xs:all>
+            <xs:element name="name" type="xs:string" />
+            <xs:element name="desc" type="xs:string" />
+            <xs:element name="size" type="xs:int" />
+            <xs:element name="repr" type="stringToClass" />
+            <xs:element name="reverse" type="xs:boolean" />
+            <xs:element name="skip" type="xs:boolean" />
+        </xs:all>   
+    </xs:complexType>    
+    
+</xs:schema>

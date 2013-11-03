@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:jxb="http://java.sun.com/xml/ns/jaxb"
+           jxb:version="2.0"
+           elementFormDefault="qualified">
+    
+    <xs:include schemaLocation="G:\Github\CSC489\Shared\assets\jaxb\adapters.xsd" />
+    <xs:include schemaLocation="G:\Github\CSC489\Shared\assets\jaxb\parameters.xsd" />
+    
+    <xs:element name="configurations" type="Configurations" />
+    
+    <xs:complexType name="Configurations">
+        <xs:sequence>
+            <xs:element name="configuration" type="Configuration" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="Configuration">
+        <xs:all>
+            <xs:element name="name" type="xs:string" />
+            <xs:element name="repr" type="stringToClass" />
+            <xs:element name="choices" type="Choices" />
+        </xs:all>
+    </xs:complexType>
+    
+    <xs:complexType name="Choices">
+        <xs:sequence>
+            <xs:element name="choice" type="Choice" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="Choice">
+        <xs:all>
+            <xs:element name="name" type="xs:string" />
+            <xs:element name="cluster" type="xs:string" />
+            <xs:element name="worker" type="xs:string" />
+            <xs:element name="parameters" type="Parameters" />
+        </xs:all>
+    </xs:complexType>    
+</xs:schema>

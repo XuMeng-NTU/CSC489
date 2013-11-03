@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<definitions>
+    <definition>
+        <name>COLUMN_ID</name>
+        <desc>column ID</desc>
+        <size>3</size>
+        <repr>extractor.data.repr.THSUnsignedInteger</repr>
+        <reverse>true</reverse>
+        <skip>false</skip>
+    </definition>
+    <definition>
+        <name>LENGTH</name>
+        <desc>length of column value</desc>
+        <size>1</size>
+        <repr>extractor.data.repr.THSUnsignedInteger</repr>
+        <reverse>true</reverse>
+        <skip>false</skip>
+    </definition>                 
+</definitions>

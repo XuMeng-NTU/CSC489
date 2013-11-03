@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:jxb="http://java.sun.com/xml/ns/jaxb"
+           jxb:version="2.0"
+           elementFormDefault="qualified">
+
+    <xs:include schemaLocation="G:\Github\CSC489\Shared\assets\jaxb\adapters.xsd" />
+    
+    <xs:element name="mappings" type="Mappings" />
+    
+    <xs:complexType name="Mappings">
+        <xs:sequence>
+            <xs:element name="mapping" type="Mapping" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="Mapping">
+        <xs:all>
+            <xs:element name="name" type="xs:string" />
+            <!--xs:element name="id" type="longToTHSUnsignedInteger" /-->
+            <xs:element name="desc" type="xs:string" />
+            <xs:element name="symbol" type="xs:string" />
+            <xs:element name="repr" type="stringToClass" />
+        </xs:all>   
+    </xs:complexType>    
+    
+    <xs:simpleType name="longToTHSUnsignedInteger">
+        <xs:annotation>
+            <xs:appinfo>
+                <jxb:javaType name="extractor.data.repr.THSUnsignedInteger" parseMethod="extractor.data.repr.THSUnsignedInteger.parseUnsignedInteger" />
+            </xs:appinfo>
+        </xs:annotation>
+        <xs:restriction base="xs:long" />
+    </xs:simpleType>    
+        
+</xs:schema>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<registry>
+    
+    <configurations>
+
+    </configurations>  
+           
+    <components>  
+                     
+    </components>     
+
+    <data>
+        <resources>
+            <resource name="ORIGINAL">
+                <path>G:\Github\CSC489\Shared\data\preparation\</path>
+            </resource>
+            <resource name="VALIDATION">
+                <path>G:\Github\CSC489\Shared\data\validation\</path>
+            </resource> 
+            <resource name="PREDICTION">
+                <path>G:\Github\CSC489\Shared\data\prediction\</path>
+            </resource>
+        </resources>                                  
+    </data>    
+
+</registry>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<registry>
+    
+    <configurations></configurations>
+    
+    <components>
+        
+        <component name="DEFINITION" repr="extractor.settings.definitions.Definitions">
+            <resources>
+                <resource name="FILE_META">
+                    <path>assets/definitions/file_meta.xml</path>
+                </resource>
+                <resource name="COLUMN_META">
+                    <path>assets/definitions/column_meta.xml</path>
+                </resource>  
+            </resources>         
+        </component>
+    
+        <component name="MAPPING" repr="extractor.settings.mappings.Mappings">
+            <resources>
+                <resource name="DAILY">
+                    <path>assets/mapping/mapping.xml</path>
+                </resource>     
+            </resources>      
+        </component>    
+        
+    </components>
+    
+    <data>
+        <resources>
+            <resource name="ORIGINAL">
+                <path>D:\同花顺软件\同花顺\history\</path>
+            </resource>
+            <resource name="RESULT">
+                <path>G:\Github\CSC489\Shared\data\original</path>
+            </resource>     
+        </resources>                     
+    </data>
+
+</registry>

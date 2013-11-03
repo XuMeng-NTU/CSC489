@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<definitions>
+    <definition>
+        <name>HEAD</name>
+        <desc>file head</desc>
+        <size>6</size>
+        <repr>java.lang.String</repr>
+        <reverse>false</reverse>
+        <skip>false</skip>
+    </definition>
+    <definition>
+        <name>RECORD_NUM</name>
+        <desc>number of records</desc>
+        <size>4</size>
+        <repr>extractor.data.repr.THSUnsignedInteger</repr>
+        <reverse>true</reverse>
+        <skip>false</skip>
+    </definition>
+    <definition>
+        <name>RECORD_START</name>
+        <desc>record starting position</desc>
+        <size>2</size>
+        <repr>extractor.data.repr.THSUnsignedInteger</repr>
+        <reverse>true</reverse>
+        <skip>false</skip>
+    </definition> 
+    <definition>
+        <name>RECORD_LENGTH</name>
+        <desc>length of each record</desc>
+        <size>2</size>
+        <repr>extractor.data.repr.THSUnsignedInteger</repr>
+        <reverse>true</reverse>
+        <skip>false</skip>
+    </definition>
+    <definition>
+        <name>COLUMN_NUM</name>
+        <desc>number of columns in each record</desc>
+        <size>2</size>
+        <repr>extractor.data.repr.THSUnsignedInteger</repr>
+        <reverse>true</reverse>
+        <skip>false</skip>
+    </definition>                    
+</definitions>

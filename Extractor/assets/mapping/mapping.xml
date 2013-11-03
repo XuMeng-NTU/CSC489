@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<mappings>
+    <mapping>
+        <name>12289</name>
+        <desc>Date</desc>
+        <symbol>DATE</symbol>
+        <repr>extractor.data.repr.THSUnsignedInteger</repr>
+    </mapping>
+    <mapping>
+        <name>28679</name>
+        <desc>Open</desc>
+        <symbol>OPEN</symbol>
+        <repr>extractor.data.repr.THSDecimal</repr>
+    </mapping>
+    <mapping>
+        <name>28680</name>
+        <desc>High</desc>
+        <symbol>HIGH</symbol>
+        <repr>extractor.data.repr.THSDecimal</repr>
+    </mapping>   
+    <mapping>
+        <name>28681</name>
+        <desc>Low</desc>
+        <symbol>LOW</symbol>
+        <repr>extractor.data.repr.THSDecimal</repr>
+    </mapping>   
+    <mapping>
+        <name>28683</name>
+        <desc>Close</desc>
+        <symbol>CLOSE</symbol>
+        <repr>extractor.data.repr.THSDecimal</repr>
+    </mapping>   
+    <mapping>
+        <name>28691</name>
+        <desc>Amount</desc>
+        <symbol>AMOUNT</symbol>
+        <repr>extractor.data.repr.THSDecimal</repr>
+    </mapping>
+    <mapping>
+        <name>28685</name>
+        <desc>Volume</desc>
+        <symbol>VOLUME</symbol>
+        <repr>extractor.data.repr.THSDecimal</repr>
+    </mapping>      
+                            
+</mappings>
