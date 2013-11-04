@@ -7,6 +7,7 @@ package shapelet.transform;
 import java.util.Properties;
 import weka.core.Instances;
 import weka.core.shapelet.QualityMeasures;
+import weka.filters.timeseries.shapelet_transforms.ClusteredShapeletTransform;
 import weka.filters.timeseries.shapelet_transforms.ShapeletTransform;
 
 /**
@@ -29,7 +30,7 @@ public class ShapeletTransformer {
         
         transformer =new ShapeletTransform();
 
-        int nosShapelets=(train.numAttributes()-1)*train.numInstances()/50;
+        int nosShapelets=(train.numAttributes()-1)*train.numInstances()/5;
         if(nosShapelets<ShapeletTransform.DEFAULT_NUMSHAPELETS)
             nosShapelets=ShapeletTransform.DEFAULT_NUMSHAPELETS;
         transformer.setNumberOfShapelets(nosShapelets);
@@ -41,12 +42,17 @@ public class ShapeletTransformer {
 
         transformer.setQualityMeasure(QualityMeasures.ShapeletQualityChoice.F_STAT);
         transformer.turnOffLog();        
- 
+
         Instances shapeletTraining=null;
-        Instances shapeletTesting = null;
-        try {
-            shapeletTraining=transformer.process(train);
-            shapeletTesting = transformer.process(test);
+        Instances shapeletTesting = null;   
+
+        try {        
+            //shapeletTraining = transformer.process(train);
+
+            ClusteredShapeletTransform clusteredTransformer = new ClusteredShapeletTransform(transformer, (int) (nosShapelets * 0.1));
+
+            shapeletTraining = clusteredTransformer.process(train);
+            shapeletTesting = clusteredTransformer.process(test);
             
         } catch (Exception ex) {
             System.out.println("Error performing the shapelet transform"+ex);

@@ -44,9 +44,9 @@ public class VWAPRelative {
             vwap = (double)entry.get("AMOUNT")/(double)entry.get("VOLUME");
             
             temp.put(VWAP,vwap);
-            temp.put(VWAP_CHANGE, (vwap-oldVwap)/oldVwap);
-            temp.put(RELATIVE_HIGH, ((double)entry.get("HIGH")-vwap)/vwap);
-            temp.put(RELATIVE_LOW, ((double)entry.get("LOW")-vwap)/vwap);
+            temp.put(VWAP_CHANGE, (vwap-oldVwap)/oldVwap*10);
+            temp.put(RELATIVE_HIGH, ((double)entry.get("HIGH")-vwap)/vwap*10);
+            temp.put(RELATIVE_LOW, ((double)entry.get("LOW")-vwap)/vwap*10);
        
             oldVwap = vwap;
             

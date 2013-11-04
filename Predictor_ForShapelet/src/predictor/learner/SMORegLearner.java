@@ -10,6 +10,7 @@ import weka.classifiers.Classifier;
 import weka.classifiers.functions.SMOreg;
 import weka.classifiers.functions.supportVector.Kernel;
 import weka.classifiers.functions.supportVector.PolyKernel;
+import weka.classifiers.functions.supportVector.RBFKernel;
 import weka.classifiers.functions.supportVector.RegOptimizer;
 import weka.classifiers.functions.supportVector.RegSMOImproved;
 import weka.core.Instances;
@@ -25,15 +26,18 @@ public class SMORegLearner {
         try {            
             Classifier classifier = new SMOreg();
             String regOptimizerOption = "-L 0.001 -W 1 -P 1.0E-12 -T 0.001 -V";
-            String kernal = "-C 250007 -E 10.0 -L";
-            String SMOoption = "-C 500 -N 0";
+            //String kernelOption = "-C 250007 -E 5.0 -L";
+            String kernelOption = "-C 250007 -G 0.00001";
+            String SMOoption = "-C 50 -N 0";
             
             RegOptimizer regOptimizer = new RegSMOImproved();
             regOptimizer.setOptions(Utils.splitOptions(regOptimizerOption));
             ((SMOreg)classifier).setRegOptimizer(regOptimizer);
             
-            Kernel kernel = new PolyKernel();
-            kernel.setOptions(Utils.splitOptions(kernal));
+            //Kernel kernel = new PolyKernel();
+            Kernel kernel = new RBFKernel();
+            
+            kernel.setOptions(Utils.splitOptions(kernelOption));
             ((SMOreg)classifier).setKernel(kernel);
 
             ((SMOreg)classifier).setOptions(Utils.splitOptions(SMOoption));

@@ -38,7 +38,7 @@ public class Controller {
         Properties meta = Reader.readMeta(code);
         //ShapeletTransformer.transform(training, meta);
 
-        Instances[] result = ShapeletTransformer.transform(training, testing, meta);
+        Instances[] result = ShapeletRegTransformer.transform(training, testing, meta);
         
         Writer.writeTraining(code, result[0]);
         Writer.writeTesting(code, result[1]);

@@ -240,7 +240,7 @@
                 <parameters>
                     <parameter>
                         <name>INPUT</name>
-                        <value>10</value>
+                        <value>20</value>
                     </parameter>
                     <parameter>
                         <name>GRAY</name>
@@ -257,7 +257,7 @@
     <configuration>
         <name>NORMALIZER</name>
         <choices>
-<!--            
+            
             <choice>
                 <name>PRICE_GROUP</name>
                 <cluster>DEFAULT</cluster>
@@ -277,6 +277,7 @@
                     </parameter>
                 </parameters>
             </choice>
+<!--            
             <choice>
                 <name>PRICE_RANGE_GROUP</name>
                 <cluster>DEFAULT</cluster>
@@ -580,7 +581,7 @@
                     </parameter>
                     <parameter>
                         <name>OUTPUT</name>
-                        <value>VWAP_CHANGE_CATEGORY</value>
+                        <value>VWAP_CHANGE</value>
                     </parameter>
                 </parameters>
             </choice>
@@ -596,11 +597,11 @@
                 <parameters>
                     <parameter>
                         <name>ACTUAL_OUTPUT</name>
-                        <value>VWAP_CHANGE_CATEGORY</value>
+                        <value>VWAP_CHANGE</value>
                     </parameter>
                     <parameter>
                         <name>PREDICTED_OUTPUT</name>
-                        <value>VWAP_CHANGE_CATEGORY</value>
+                        <value>VWAP_CHANGE</value>
                     </parameter>
                 </parameters>
             </choice>

@@ -21,6 +21,7 @@ import java.util.TreeMap;
 import weka.core.*;
 import weka.core.shapelet.*;
 import weka.filters.SimpleBatchFilter;
+import weka.filters.timeseries.shapelet_transforms.ShapeletTransform;
 /**
  * A filter to transform a dataset by k shapelets. Once built on a training set, the
  * filter can be used to transform subsequent datasets using the extracted shapelets.
@@ -28,7 +29,7 @@ import weka.filters.SimpleBatchFilter;
  * See <a href="http://delivery.acm.org/10.1145/2340000/2339579/p289-lines.pdf?ip=139.222.14.198&acc=ACTIVE%20SERVICE&CFID=221649628&CFTOKEN=31860141&__acm__=1354814450_3dacfa9c5af84445ea2bfd7cc48180c8">Lines, J., Davis, L., Hills, J., Bagnall, A.: A shapelet transform for time series classification. In: Proc. 18th ACM SIGKDD (2012)</a>
  * @author Jason Lines
  */
-public class ShapeletRegTransform extends SimpleBatchFilter{
+public class ShapeletRegTransform extends ShapeletTransform{
 
     @Override
     public String globalInfo() {
@@ -362,15 +363,20 @@ public class ShapeletRegTransform extends SimpleBatchFilter{
             seriesShapelets = new ArrayList<Shapelet>();
 
             for(int length = minShapeletLength; length <= maxShapeletLength; length++){
-
-                //for all possible starting positions of that length
-                for(int start = 0; start <= wholeCandidate.length - length-1; start++){ //-1 = avoid classVal - handle later for series with no class val
-                    // CANDIDATE ESTABLISHED - got original series, length and starting position
-                    // extract relevant part into a double[] for processing
-                    double[] candidate = new double[length];
-                    for(int m = start; m < start + length; m++){
-                        candidate[m - start] = wholeCandidate[m];
-                    }
+                
+                double[] candidate = new double[length];
+                for(int m=0;m<length;m++){
+                    candidate[m] = wholeCandidate[wholeCandidate.length-1-length+m];
+                }
+                
+//                //for all possible starting positions of that length
+//                for(int start = 0; start <= wholeCandidate.length - length-1; start++){ //-1 = avoid classVal - handle later for series with no class val
+//                    // CANDIDATE ESTABLISHED - got original series, length and starting position
+//                    // extract relevant part into a double[] for processing
+//                    double[] candidate = new double[length];
+//                    for(int m = start; m < start + length; m++){
+//                        candidate[m - start] = wholeCandidate[m];
+//                    }
 
                     // znorm candidate here so it's only done once, rather than in each distance calculation
                     candidate = zNorm(candidate, false);
@@ -383,18 +389,18 @@ public class ShapeletRegTransform extends SimpleBatchFilter{
                         qualityBound.setBsfQulity(kShapelets.get(numShapelets-1).qualityValue);
                     }
                             
-                    Shapelet candidateShapelet = checkCandidate(candidate, data, i, start, classDistances, qualityBound);
+                    Shapelet candidateShapelet = checkCandidate(candidate, data, i, wholeCandidate.length-1-length, classDistances, qualityBound);
                     
                     //If shapelet was pruned then null will be returned so need to check for that
                     if(candidateShapelet != null){
                         seriesShapelets.add(candidateShapelet);
                     }
-                }
+//                }
             }
             // now that we have all shapelets, self similarity can be fairly assessed without fear of removing potentially
             // good shapelets
             Collections.sort(seriesShapelets);
-            seriesShapelets = removeSelfSimilar(seriesShapelets);
+            //seriesShapelets = removeSelfSimilar(seriesShapelets);
             kShapelets = combine(numShapelets,kShapelets,seriesShapelets);
         }
         
@@ -633,7 +639,7 @@ public class ShapeletRegTransform extends SimpleBatchFilter{
             y2 = y2 + ((double)classDistances.get(i)-distanceMean)*((double)classDistances.get(i)-distanceMean);
         }
         
-        return x/(Math.sqrt(y1*y2));
+        return Math.abs(x/(Math.sqrt(y1*y2)));
     }
     
     /**
@@ -667,13 +673,13 @@ public class ShapeletRegTransform extends SimpleBatchFilter{
         double[] subseq;
 
         // for all possible subsequences of two
-        for(int i = 0; i <= timeSeries.length - candidate.length - 1; i++){
+//        for(int i = 0; i <= timeSeries.length - candidate.length - 1; i++){
             sum = 0;
             // get subsequence of two that is the same lenght as one
             subseq = new double[candidate.length];
 
-            for(int j = i; j < i + candidate.length; j++){
-                subseq[j - i] = timeSeries[j];
+            for(int j = 0; j < subseq.length; j++){
+                subseq[j] = timeSeries[timeSeries.length-1-candidate.length+j];
                 
                 //Keep count of fundamental ops for experiment
                 subseqDistOpCount++;
@@ -692,7 +698,7 @@ public class ShapeletRegTransform extends SimpleBatchFilter{
             if(sum < bestSum){
                 bestSum = sum;
             }
-        }
+//        }
         return (bestSum == 0.0) ? 0.0 : (1.0 / candidate.length * bestSum); 
     }
     protected double[] zNorm(double[] input, boolean classValOn){        
