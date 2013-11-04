@@ -140,7 +140,121 @@
                         <value>BOLL_WIDTH</value>
                     </parameter>                    
                 </parameters>
-            </choice>                       
+            </choice>    
+            <choice>
+                <name>MA3</name>
+                <cluster>DEFAULT</cluster>
+                <worker>MA</worker>
+                <parameters>
+                    <parameter>
+                        <name>MA_DAYS</name>
+                        <value>3</value>
+                    </parameter>
+                    <parameter>
+                        <name>MA</name>
+                        <value>MA3</value>
+                    </parameter>
+                    <parameter>
+                        <name>MA_CHANGE</name>
+                        <value>MA3_CHANGE</value>
+                    </parameter>                    
+                </parameters>
+            </choice>      
+            <choice>
+                <name>MA5</name>
+                <cluster>DEFAULT</cluster>
+                <worker>MA</worker>
+                <parameters>
+                    <parameter>
+                        <name>MA_DAYS</name>
+                        <value>5</value>
+                    </parameter>
+                    <parameter>
+                        <name>MA</name>
+                        <value>MA5</value>
+                    </parameter>
+                    <parameter>
+                        <name>MA_CHANGE</name>
+                        <value>MA5_CHANGE</value>
+                    </parameter>                       
+                </parameters>
+            </choice>       
+            <choice>
+                <name>MA10</name>
+                <cluster>DEFAULT</cluster>
+                <worker>MA</worker>
+                <parameters>
+                    <parameter>
+                        <name>MA_DAYS</name>
+                        <value>10</value>
+                    </parameter>
+                    <parameter>
+                        <name>MA</name>
+                        <value>MA10</value>
+                    </parameter>
+                    <parameter>
+                        <name>MA_CHANGE</name>
+                        <value>MA10_CHANGE</value>
+                    </parameter>                       
+                </parameters>
+            </choice>
+            <choice>
+                <name>VMA3</name>
+                <cluster>DEFAULT</cluster>
+                <worker>VMA</worker>
+                <parameters>
+                    <parameter>
+                        <name>VOLUME_MA_DAYS</name>
+                        <value>3</value>
+                    </parameter>
+                    <parameter>
+                        <name>VOLUME_MA</name>
+                        <value>VMA3</value>
+                    </parameter>
+                    <parameter>
+                        <name>VOLUME_MA_CHANGE</name>
+                        <value>VMA3_CHANGE</value>
+                    </parameter>                    
+                </parameters>
+            </choice>   
+            <choice>
+                <name>VMA5</name>
+                <cluster>DEFAULT</cluster>
+                <worker>VMA</worker>
+                <parameters>
+                    <parameter>
+                        <name>VOLUME_MA_DAYS</name>
+                        <value>5</value>
+                    </parameter>
+                    <parameter>
+                        <name>VOLUME_MA</name>
+                        <value>VMA5</value>
+                    </parameter>
+                    <parameter>
+                        <name>VOLUME_MA_CHANGE</name>
+                        <value>VMA5_CHANGE</value>
+                    </parameter>                    
+                </parameters>
+            </choice>     
+            <choice>
+                <name>VMA10</name>
+                <cluster>DEFAULT</cluster>
+                <worker>VMA</worker>
+                <parameters>
+                    <parameter>
+                        <name>VOLUME_MA_DAYS</name>
+                        <value>10</value>
+                    </parameter>
+                    <parameter>
+                        <name>VOLUME_MA</name>
+                        <value>VMA10</value>
+                    </parameter>
+                    <parameter>
+                        <name>VOLUME_MA_CHANGE</name>
+                        <value>VMA10_CHANGE</value>
+                    </parameter>                    
+                </parameters>
+            </choice>                               
         </choices>
     </configuration>
     <configuration>
@@ -240,7 +354,7 @@
                 <parameters>
                     <parameter>
                         <name>INPUT</name>
-                        <value>20</value>
+                        <value>10</value>
                     </parameter>
                     <parameter>
                         <name>GRAY</name>
@@ -265,27 +379,7 @@
                 <parameters>
                     <parameter>
                         <name>FIELDS</name>
-                        <value>OPEN,HIGH,LOW,CLOSE,PRC_AVE,VWAP</value>
-                    </parameter>
-                    <parameter>
-                        <name>UPPER_BOUND</name>
-                        <value>1</value>
-                    </parameter>
-                    <parameter>
-                        <name>LOWER_BOUND</name>
-                        <value>0</value>
-                    </parameter>
-                </parameters>
-            </choice>
-<!--            
-            <choice>
-                <name>PRICE_RANGE_GROUP</name>
-                <cluster>DEFAULT</cluster>
-                <worker>LINEAR</worker>
-                <parameters>
-                    <parameter>
-                        <name>FIELDS</name>
-                        <value>PRC_RNG</value>
+                        <value>OPEN,HIGH,LOW,CLOSE,PRC_AVE,VWAP,MA3,MA5,MA10</value>
                     </parameter>
                     <parameter>
                         <name>UPPER_BOUND</name>
@@ -304,7 +398,7 @@
                 <parameters>
                     <parameter>
                         <name>FIELDS</name>
-                        <value>VOLUME</value>
+                        <value>VOLUME,VMA3,VMA5,VMA10</value>
                     </parameter>
                     <parameter>
                         <name>UPPER_BOUND</name>
@@ -334,7 +428,28 @@
                         <value>0</value>
                     </parameter>
                 </parameters>
+            </choice>            
+           
+            <choice>
+                <name>PRICE_RANGE_GROUP</name>
+                <cluster>DEFAULT</cluster>
+                <worker>LINEAR</worker>
+                <parameters>
+                    <parameter>
+                        <name>FIELDS</name>
+                        <value>PRC_RNG</value>
+                    </parameter>
+                    <parameter>
+                        <name>UPPER_BOUND</name>
+                        <value>1</value>
+                    </parameter>
+                    <parameter>
+                        <name>LOWER_BOUND</name>
+                        <value>0</value>
+                    </parameter>
+                </parameters>
             </choice>
+
             <choice>
                 <name>MACD_GROUP</name>
                 <cluster>DEFAULT</cluster>
@@ -475,7 +590,7 @@
                 <parameters>
                     <parameter>
                         <name>FIELDS</name>
-                        <value>VWAP_CHANGE</value>
+                        <value>VWAP_CHANGE,MA3_CHANGE,MA5_CHANGE,MA10_CHANGE</value>
                     </parameter>
                     <parameter>
                         <name>UPPER_BOUND</name>
@@ -494,7 +609,7 @@
                 <parameters>
                     <parameter>
                         <name>FIELDS</name>
-                        <value>VOLUME_CNG</value>
+                        <value>VOLUME_CNG,VMA3_CHANGE,VMA5_CHANGE,VMA10_CHANGE</value>
                     </parameter>
                     <parameter>
                         <name>UPPER_BOUND</name>
@@ -562,8 +677,7 @@
                         <value>0</value>
                     </parameter>
                 </parameters>
-            </choice>   
--->                     
+            </choice>                       
         </choices>
     </configuration>
     <configuration>
@@ -576,12 +690,12 @@
                 <parameters>
                     <parameter>
                         <name>INPUT</name>
-                        <value>VWAP</value>
-                        <!--value>VWAP,VOLUME,MACD_LINE,MACD_SIGNAL,MACD_DIFF,KDJ_K,KDJ_D,KDJ_J,RSI,WR,BOLL_PERCENT,BOLL_WIDTH</value-->
+                        <!--value>VWAP,VOLUME,MA3,MA5,MA10,MA3_CHANGE,MA5_CHANGE,MA10_CHANGE,VMA3,VMA5,VMA10,VMA3_CHANGE,VMA5_CHANGE,VMA10_CHANGE,MACD_LINE,MACD_SIGNAL,MACD_DIFF,KDJ_K,KDJ_D,KDJ_J,RSI,WR,BOLL_PERCENT,BOLL_WIDTH</value-->
+                        <value>VWAP,VWAP_CHANGE,VOLUME,VOLUME_CNG,MA3,MA5,MA10,MA3_CHANGE,MA5_CHANGE,MA10_CHANGE,VMA3,VMA5,VMA10,VMA3_CHANGE,VMA5_CHANGE,VMA10_CHANGE,MACD_LINE,MACD_SIGNAL,MACD_DIFF,KDJ_K,KDJ_D,KDJ_J,RSI,WR,BOLL_PERCENT,BOLL_WIDTH</value>
                     </parameter>
                     <parameter>
                         <name>OUTPUT</name>
-                        <value>VWAP_CHANGE</value>
+                        <value>VWAP</value>
                     </parameter>
                 </parameters>
             </choice>
@@ -597,11 +711,11 @@
                 <parameters>
                     <parameter>
                         <name>ACTUAL_OUTPUT</name>
-                        <value>VWAP_CHANGE</value>
+                        <value>VWAP</value>
                     </parameter>
                     <parameter>
                         <name>PREDICTED_OUTPUT</name>
-                        <value>VWAP_CHANGE</value>
+                        <value>VWAP</value>
                     </parameter>
                 </parameters>
             </choice>

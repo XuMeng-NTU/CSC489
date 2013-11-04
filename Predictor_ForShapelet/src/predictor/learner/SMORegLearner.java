@@ -26,16 +26,16 @@ public class SMORegLearner {
         try {            
             Classifier classifier = new SMOreg();
             String regOptimizerOption = "-L 0.001 -W 1 -P 1.0E-12 -T 0.001 -V";
-            //String kernelOption = "-C 250007 -E 5.0 -L";
-            String kernelOption = "-C 250007 -G 0.00001";
+            String kernelOption = "-C 250007 -E 7.0 -L";
+            //String kernelOption = "-C 250007 -G 0.001";
             String SMOoption = "-C 50 -N 0";
             
             RegOptimizer regOptimizer = new RegSMOImproved();
             regOptimizer.setOptions(Utils.splitOptions(regOptimizerOption));
             ((SMOreg)classifier).setRegOptimizer(regOptimizer);
             
-            //Kernel kernel = new PolyKernel();
-            Kernel kernel = new RBFKernel();
+            Kernel kernel = new PolyKernel();
+            //Kernel kernel = new RBFKernel();
             
             kernel.setOptions(Utils.splitOptions(kernelOption));
             ((SMOreg)classifier).setKernel(kernel);

@@ -111,5 +111,41 @@ and open the template in the editor.
                 <value>java.lang.String</value>
             </parameter>            
         </parameters>
-    </component>          
+    </component>  
+    <component>
+        <name>MA</name>
+        <repr>preparer.indicators.MovingAverage</repr>
+        <parameters>
+            <parameter>
+                <name>MA_DAYS</name>
+                <value>java.lang.Integer</value>
+            </parameter>      
+            <parameter>
+                <name>MA</name>
+                <value>java.lang.String</value>
+            </parameter>      
+            <parameter>
+                <name>MA_CHANGE</name>
+                <value>java.lang.String</value>
+            </parameter>                
+        </parameters>
+    </component>       
+    <component>
+        <name>VMA</name>
+        <repr>preparer.indicators.VolumeMovingAverage</repr>
+        <parameters>
+            <parameter>
+                <name>VOLUME_MA_DAYS</name>
+                <value>java.lang.Integer</value>
+            </parameter>      
+            <parameter>
+                <name>VOLUME_MA</name>
+                <value>java.lang.String</value>
+            </parameter>      
+            <parameter>
+                <name>VOLUME_MA_CHANGE</name>
+                <value>java.lang.String</value>
+            </parameter>                
+        </parameters>
+    </component>               
 </components>

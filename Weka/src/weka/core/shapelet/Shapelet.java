@@ -16,6 +16,7 @@ public class Shapelet implements Comparable<Shapelet>{
     public int startPos;
     public QualityMeasures.ShapeletQualityMeasure qualityType;
     public double qualityValue;
+    public int seriesAttribute;
 
     
     public Shapelet(double[] content, int seriesId, int startPos, QualityMeasures.ShapeletQualityMeasure qualityChoice){
@@ -30,6 +31,15 @@ public class Shapelet implements Comparable<Shapelet>{
         this.content = content;
     }
 
+    public void setSeriesAttribute(int i){
+        seriesAttribute = i;
+    }
+
+    public int getSeriesAttribute(){
+        return seriesAttribute;
+    }
+    
+    
     public void calculateQuality(ArrayList<OrderLineObj> orderline, TreeMap<Double, Integer> classDistribution){
         this.qualityValue = this.qualityType.calculateQuality(orderline, classDistribution);
     }
