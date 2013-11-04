@@ -303,7 +303,7 @@ public class ShapeletTransform extends SimpleBatchFilter{
         return output;
     }
 
-
+   
     /**
      * Set file path for the filter log. Filter log includes shapelet quality, seriesId, startPosition, and content for each shapelet.
      * @param fileName the updated file path of the filter log

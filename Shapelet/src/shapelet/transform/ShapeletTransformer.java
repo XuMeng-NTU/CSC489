@@ -15,20 +15,21 @@ import weka.filters.timeseries.shapelet_transforms.ShapeletTransform;
  */
 public class ShapeletTransformer {
     
-    public static Instances transform(Instances dataset, Properties meta){
+    public static Instances[] transform(Instances training, Instances testing, Properties meta){
         
-        dataset.setClass(dataset.attribute(meta.getProperty("OUTPUT_HEAD")));
+        training.setClass(training.attribute(meta.getProperty("OUTPUT_HEAD")));
+        testing.setClass(testing.attribute(meta.getProperty("OUTPUT_HEAD")));
         
-        return basicTransform(dataset);
+        return basicTransform(training, testing);
     }
     
-    public static Instances basicTransform(Instances train){
+    public static Instances[] basicTransform(Instances train, Instances test){
 
         ShapeletTransform transformer = new ShapeletTransform();
         
         transformer =new ShapeletTransform();
 
-        int nosShapelets=(train.numAttributes()-1)*train.numInstances()/10;
+        int nosShapelets=(train.numAttributes()-1)*train.numInstances()/50;
         if(nosShapelets<ShapeletTransform.DEFAULT_NUMSHAPELETS)
             nosShapelets=ShapeletTransform.DEFAULT_NUMSHAPELETS;
         transformer.setNumberOfShapelets(nosShapelets);
@@ -41,15 +42,22 @@ public class ShapeletTransformer {
         transformer.setQualityMeasure(QualityMeasures.ShapeletQualityChoice.F_STAT);
         transformer.turnOffLog();        
  
-        Instances shapeletT=null;
+        Instances shapeletTraining=null;
+        Instances shapeletTesting = null;
         try {
-            shapeletT=transformer.process(train);
+            shapeletTraining=transformer.process(train);
+            shapeletTesting = transformer.process(test);
+            
         } catch (Exception ex) {
             System.out.println("Error performing the shapelet transform"+ex);
             ex.printStackTrace();
             System.exit(0);
         }
   
-        return shapeletT;
+        Instances[] result = new Instances[2];
+        result[0] = shapeletTraining;
+        result[1] = shapeletTesting;
+        
+        return result;
     }
 }

@@ -52,7 +52,7 @@ public class WR {
             if(highest[i]==null || lowest[i]==null){
                 temp.put(WR, null);
             } else{
-                temp.put(WR, 2*WR_DAYS*(highest[i]-(double)data.get(i).get("CLOSE"))/(highest[i]-lowest[i]));
+                temp.put(WR, 2*WR_DAYS*(highest[i]-(double)data.get(i).get("CLOSE"))/(highest[i]-lowest[i])/20);
             }
             result.add(temp);
         }

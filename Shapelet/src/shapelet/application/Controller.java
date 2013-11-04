@@ -8,6 +8,7 @@ import java.nio.file.Paths;
 import java.util.Properties;
 import shapelet.io.Reader;
 import shapelet.io.Writer;
+import shapelet.transform.ShapeletRegTransformer;
 import shapelet.transform.ShapeletTransformer;
 import template.settings.Settings;
 import weka.core.Instances;
@@ -37,8 +38,10 @@ public class Controller {
         Properties meta = Reader.readMeta(code);
         //ShapeletTransformer.transform(training, meta);
 
-        Writer.writeTraining(code, ShapeletTransformer.transform(training, meta));
-        Writer.writeTesting(code, ShapeletTransformer.transform(testing, meta));
+        Instances[] result = ShapeletTransformer.transform(training, testing, meta);
+        
+        Writer.writeTraining(code, result[0]);
+        Writer.writeTesting(code, result[1]);
         
     }
     

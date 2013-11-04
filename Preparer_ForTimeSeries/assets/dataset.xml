@@ -140,7 +140,121 @@
                         <value>BOLL_WIDTH</value>
                     </parameter>                    
                 </parameters>
-            </choice>                       
+            </choice>  
+            <choice>
+                <name>MA3</name>
+                <cluster>DEFAULT</cluster>
+                <worker>MA</worker>
+                <parameters>
+                    <parameter>
+                        <name>MA_DAYS</name>
+                        <value>3</value>
+                    </parameter>
+                    <parameter>
+                        <name>MA</name>
+                        <value>MA3</value>
+                    </parameter>
+                    <parameter>
+                        <name>MA_CHANGE</name>
+                        <value>MA3_CHANGE</value>
+                    </parameter>                    
+                </parameters>
+            </choice>      
+            <choice>
+                <name>MA5</name>
+                <cluster>DEFAULT</cluster>
+                <worker>MA</worker>
+                <parameters>
+                    <parameter>
+                        <name>MA_DAYS</name>
+                        <value>5</value>
+                    </parameter>
+                    <parameter>
+                        <name>MA</name>
+                        <value>MA5</value>
+                    </parameter>
+                    <parameter>
+                        <name>MA_CHANGE</name>
+                        <value>MA5_CHANGE</value>
+                    </parameter>                       
+                </parameters>
+            </choice>       
+            <choice>
+                <name>MA10</name>
+                <cluster>DEFAULT</cluster>
+                <worker>MA</worker>
+                <parameters>
+                    <parameter>
+                        <name>MA_DAYS</name>
+                        <value>10</value>
+                    </parameter>
+                    <parameter>
+                        <name>MA</name>
+                        <value>MA10</value>
+                    </parameter>
+                    <parameter>
+                        <name>MA_CHANGE</name>
+                        <value>MA10_CHANGE</value>
+                    </parameter>                       
+                </parameters>
+            </choice>
+            <choice>
+                <name>VMA3</name>
+                <cluster>DEFAULT</cluster>
+                <worker>VMA</worker>
+                <parameters>
+                    <parameter>
+                        <name>VOLUME_MA_DAYS</name>
+                        <value>3</value>
+                    </parameter>
+                    <parameter>
+                        <name>VOLUME_MA</name>
+                        <value>VMA3</value>
+                    </parameter>
+                    <parameter>
+                        <name>VOLUME_MA_CHANGE</name>
+                        <value>VMA3_CHANGE</value>
+                    </parameter>                    
+                </parameters>
+            </choice>   
+            <choice>
+                <name>VMA5</name>
+                <cluster>DEFAULT</cluster>
+                <worker>VMA</worker>
+                <parameters>
+                    <parameter>
+                        <name>VOLUME_MA_DAYS</name>
+                        <value>5</value>
+                    </parameter>
+                    <parameter>
+                        <name>VOLUME_MA</name>
+                        <value>VMA5</value>
+                    </parameter>
+                    <parameter>
+                        <name>VOLUME_MA_CHANGE</name>
+                        <value>VMA5_CHANGE</value>
+                    </parameter>                    
+                </parameters>
+            </choice>     
+            <choice>
+                <name>VMA10</name>
+                <cluster>DEFAULT</cluster>
+                <worker>VMA</worker>
+                <parameters>
+                    <parameter>
+                        <name>VOLUME_MA_DAYS</name>
+                        <value>10</value>
+                    </parameter>
+                    <parameter>
+                        <name>VOLUME_MA</name>
+                        <value>VMA10</value>
+                    </parameter>
+                    <parameter>
+                        <name>VOLUME_MA_CHANGE</name>
+                        <value>VMA10_CHANGE</value>
+                    </parameter>                    
+                </parameters>
+            </choice>                                       
         </choices>
     </configuration>
     <configuration>
@@ -575,12 +689,12 @@
                 <parameters>
                     <parameter>
                         <name>INPUT</name>
-                        <value>OPEN,HIGH,LOW,CLOSE,VOLUME,AMOUNT</value>
-                        <!--value>VWAP,VOLUME,MACD_LINE,MACD_SIGNAL,MACD_DIFF,KDJ_K,KDJ_D,KDJ_J,RSI,WR,BOLL_PERCENT,BOLL_WIDTH</value-->
+                        <value>DATE,OPEN,HIGH,LOW,CLOSE,VOLUME,AMOUNT</value>
+                        <!--value>VWAP,VOLUME,MA3,MA5,MA10,VMA3,VMA5,VMA10,MACD_LINE,MACD_SIGNAL,MACD_DIFF,KDJ_K,KDJ_D,KDJ_J,RSI,WR,BOLL_PERCENT,BOLL_WIDTH</value-->
                     </parameter>
                     <parameter>
                         <name>OUTPUT</name>
-                        <value>VWAP_CHANGE_CATEGORY</value>
+                        <value>VWAP_CHANGE</value>
                     </parameter>
                 </parameters>
             </choice>

@@ -596,11 +596,11 @@
                 <parameters>
                     <parameter>
                         <name>ACTUAL_OUTPUT</name>
-                        <value>CLOSE</value>
+                        <value>VWAP_CHANGE_CATEGORY</value>
                     </parameter>
                     <parameter>
                         <name>PREDICTED_OUTPUT</name>
-                        <value>CLOSE</value>
+                        <value>VWAP_CHANGE_CATEGORY</value>
                     </parameter>
                 </parameters>
             </choice>
