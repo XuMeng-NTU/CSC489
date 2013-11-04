@@ -46,35 +46,35 @@ public class VWAPChangeCategory {
 //            }
             
             if(vwapChange>=-0.005 && vwapChange<=0.005){
-                temp.put(VWAP_CHANGE_CATEGORY, 0);
+                temp.put(VWAP_CHANGE_CATEGORY, 0+"-Class");
             } else if(vwapChange>=0.005 && vwapChange<=0.01){
-                temp.put(VWAP_CHANGE_CATEGORY, 1);
+                temp.put(VWAP_CHANGE_CATEGORY, 1+"-Class");
             } else if(vwapChange>=0.01 && vwapChange<=0.02){
-                temp.put(VWAP_CHANGE_CATEGORY, 2);
+                temp.put(VWAP_CHANGE_CATEGORY, 2+"-Class");
             } else if(vwapChange>=0.02 && vwapChange<=0.03){
-                temp.put(VWAP_CHANGE_CATEGORY, 3);
+                temp.put(VWAP_CHANGE_CATEGORY, 3+"-Class");
             } else if(vwapChange>=0.03 && vwapChange<=0.05){
-                temp.put(VWAP_CHANGE_CATEGORY, 4);
+                temp.put(VWAP_CHANGE_CATEGORY, 4+"-Class");
             } else if(vwapChange>=0.05 && vwapChange<=0.07){
-                temp.put(VWAP_CHANGE_CATEGORY, 5);
+                temp.put(VWAP_CHANGE_CATEGORY, 5+"-Class");
             } else if(vwapChange>=0.07 && vwapChange<=0.09){
-                temp.put(VWAP_CHANGE_CATEGORY, 6);
+                temp.put(VWAP_CHANGE_CATEGORY, 6+"-Class");
             } else if(vwapChange>=0.09){
-                temp.put(VWAP_CHANGE_CATEGORY, 7);
+                temp.put(VWAP_CHANGE_CATEGORY, 7+"-Class");
             }else if(vwapChange>=-0.01 && vwapChange<=-0.005){
-                temp.put(VWAP_CHANGE_CATEGORY, -1);
+                temp.put(VWAP_CHANGE_CATEGORY, -1+"-Class");
             } else if(vwapChange>=-0.02 && vwapChange<=-0.01){
-                temp.put(VWAP_CHANGE_CATEGORY, -2);
+                temp.put(VWAP_CHANGE_CATEGORY, -2+"-Class");
             } else if(vwapChange>=-0.03 && vwapChange<=-0.02){
-                temp.put(VWAP_CHANGE_CATEGORY, -3);
+                temp.put(VWAP_CHANGE_CATEGORY, -3+"-Class");
             } else if(vwapChange>=-0.05 && vwapChange<=-0.03){
-                temp.put(VWAP_CHANGE_CATEGORY, -4);
+                temp.put(VWAP_CHANGE_CATEGORY, -4+"-Class");
             } else if(vwapChange>=-0.07 && vwapChange<=-0.05){
-                temp.put(VWAP_CHANGE_CATEGORY, -5);
+                temp.put(VWAP_CHANGE_CATEGORY, -5+"-Class");
             } else if(vwapChange>=-0.09 && vwapChange<=-0.07){
-                temp.put(VWAP_CHANGE_CATEGORY, -6);
+                temp.put(VWAP_CHANGE_CATEGORY, -6+"-Class");
             } else if(vwapChange<=-0.09){
-                temp.put(VWAP_CHANGE_CATEGORY, -7);
+                temp.put(VWAP_CHANGE_CATEGORY, -7+"-Class");
             }
 
             oldVwap = vwap;

@@ -575,12 +575,12 @@
                 <parameters>
                     <parameter>
                         <name>INPUT</name>
-                        <value>DATE,OPEN,HIGH,LOW,CLOSE,VOLUME,AMOUNT</value>
+                        <value>OPEN,HIGH,LOW,CLOSE,VOLUME,AMOUNT</value>
                         <!--value>VWAP,VOLUME,MACD_LINE,MACD_SIGNAL,MACD_DIFF,KDJ_K,KDJ_D,KDJ_J,RSI,WR,BOLL_PERCENT,BOLL_WIDTH</value-->
                     </parameter>
                     <parameter>
                         <name>OUTPUT</name>
-                        <value>CLOSE</value>
+                        <value>VWAP_CHANGE_CATEGORY</value>
                     </parameter>
                 </parameters>
             </choice>
@@ -596,11 +596,11 @@
                 <parameters>
                     <parameter>
                         <name>ACTUAL_OUTPUT</name>
-                        <value>CLOSE</value>
+                        <value>VWAP_CHANGE_CATEGORY</value>
                     </parameter>
                     <parameter>
                         <name>PREDICTED_OUTPUT</name>
-                        <value>CLOSE</value>
+                        <value>VWAP_CHANGE_CATEGORY</value>
                     </parameter>
                 </parameters>
             </choice>

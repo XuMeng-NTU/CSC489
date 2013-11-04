@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<components>
+    <component>
+        <name>PRICE_AVERAGE</name>
+        <repr>preparer.transformers.PriceAverage</repr>
+        <parameters>
+            <parameter>
+                <name>PRC_AVE</name>
+                <value>java.lang.String</value>
+            </parameter>
+        </parameters>        
+    </component>
+    <component>
+        <name>PRICE_RANGE</name>
+        <repr>preparer.transformers.PriceRange</repr>
+        <parameters>
+            <parameter>
+                <name>PRC_RNG</name>
+                <value>java.lang.String</value>
+            </parameter>
+        </parameters>        
+    </component> 
+    <component>
+        <name>PRICE_CHANGE</name>
+        <repr>preparer.transformers.PriceChange</repr>
+        <parameters>
+            <parameter>
+                <name>OPEN_CNG</name>
+                <value>java.lang.String</value>
+            </parameter>
+            <parameter>
+                <name>CLOSE_CNG</name>
+                <value>java.lang.String</value>
+            </parameter>
+        </parameters>        
+    </component> 
+    <component>
+        <name>VOLUME_CHANGE</name>
+        <repr>preparer.transformers.VolumeChange</repr>
+        <parameters>
+            <parameter>
+                <name>VOLUME_CNG</name>
+                <value>java.lang.String</value>
+            </parameter>
+        </parameters>        
+    </component>               
+    <component>
+        <name>VWAP_RELATIVE</name>
+        <repr>preparer.transformers.VWAPRelative</repr>
+        <parameters>
+            <parameter>
+                <name>VWAP</name>
+                <value>java.lang.String</value>
+            </parameter>
+            <parameter>
+                <name>VWAP_CHANGE</name>
+                <value>java.lang.String</value>
+            </parameter>
+            <parameter>
+                <name>RELATIVE_HIGH</name>
+                <value>java.lang.String</value>
+            </parameter>
+            <parameter>
+                <name>RELATIVE_LOW</name>
+                <value>java.lang.String</value>
+            </parameter>                                                            
+        </parameters>           
+    </component>   
+    <component>
+        <name>VWAP_CHANGE_CATEGORY</name>
+        <repr>preparer.transformers.VWAPChangeCategory</repr>
+        <parameters>
+            <parameter>
+                <name>VWAP_CHANGE_CATEGORY</name>
+                <value>java.lang.String</value>
+            </parameter>                                                           
+        </parameters>           
+    </component>          
+</components>

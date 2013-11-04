@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:jxb="http://java.sun.com/xml/ns/jaxb"
+           jxb:version="2.0"
+           elementFormDefault="qualified">
+
+    <xs:include schemaLocation="G:\Github\CSC489\Shared\assets\jaxb\adapters.xsd" />
+    
+    <xs:element name="transformers" type="Transformers" />
+    
+    <xs:complexType name="Transformers">
+        <xs:sequence>
+            <xs:element name="transformer" type="Transformer" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="Transformer">
+        <xs:all>
+            <xs:element name="name" type="xs:string" />
+            <xs:element name="repr" type="stringToClass" />
+        </xs:all>   
+    </xs:complexType>    
+    
+</xs:schema>
