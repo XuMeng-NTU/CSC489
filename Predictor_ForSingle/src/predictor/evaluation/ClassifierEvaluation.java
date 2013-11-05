@@ -29,8 +29,8 @@ public class ClassifierEvaluation {
                 result.add(evalResult);
             }
             
-            System.out.println("Mean Absolute Error: "+eval.meanAbsoluteError());
-            System.out.println("Root mean squared error: "+eval.rootMeanSquaredError());
+            System.out.println("Mean Absolute Error,"+eval.meanAbsoluteError());
+            System.out.println("Root mean squared error,"+eval.rootMeanSquaredError());
             
             return result;
         } catch (Exception ex) {

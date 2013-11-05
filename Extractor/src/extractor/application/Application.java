@@ -4,6 +4,8 @@
  */
 package extractor.application;
 
+import util.ticker.TickerRetriever;
+import java.util.List;
 import java.util.Scanner;
 
 /**
@@ -14,6 +16,13 @@ public class Application {
     
     public static final String REGISTRY = "settings/registry/registry.xml";
     
+    public static void auto(){
+        List<String> tickers = TickerRetriever.retrieve(TickerRetriever.FOLDER);
+        for(String ticker : tickers){
+            Controller.getInstance().extract(ticker);
+        }
+    }
+    
     public static void main(String[] args){
         
         while (true) {
@@ -22,7 +31,11 @@ public class Application {
             Scanner input = new Scanner(System.in);
             String code = input.next();
 
-            if(code.equalsIgnoreCase("Q")){
+            if(code.equalsIgnoreCase("AUTO")){
+                auto();
+            }
+            
+            else if(code.equalsIgnoreCase("Q")){
                 System.exit(0);
             }
             

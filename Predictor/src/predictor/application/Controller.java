@@ -38,9 +38,9 @@ public class Controller {
         training.setClass(training.attribute(meta.getProperty("OUTPUT_HEAD")));
         testing.setClass(testing.attribute(meta.getProperty("OUTPUT_HEAD")));
 
-        //Classifier classifier = SMORegLearner.learn(training);
+        Classifier classifier = SMORegLearner.learn(training);
         
-        Classifier classifier = SMOLearner.learn(training);
+        //Classifier classifier = SMOLearner.learn(training);
         
         Writer.writeEvaluationResult(code, ClassifierEvaluation.evaluate(classifier, testing));
         

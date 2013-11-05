@@ -28,6 +28,12 @@ public class ClassifierEvaluation {
             for(double evalResult : evalResults){
                 result.add(evalResult);
             }
+                        
+            System.out.println("Mean Absolute Error: "+eval.meanAbsoluteError());
+            System.out.println("Root mean squared error: "+eval.rootMeanSquaredError());            
+            System.out.println("Percentage Correct: "+eval.pctCorrect());
+            System.out.println("Percentage Incorrect: "+eval.pctIncorrect());            
+            
             return result;
         } catch (Exception ex) {
             Logger.getLogger(ClassifierEvaluation.class.getName()).log(Level.SEVERE, null, ex);

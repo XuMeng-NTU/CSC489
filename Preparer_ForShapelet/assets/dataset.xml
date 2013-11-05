@@ -449,7 +449,7 @@
                     </parameter>
                 </parameters>
             </choice>
-
+<!--
             <choice>
                 <name>MACD_GROUP</name>
                 <cluster>DEFAULT</cluster>
@@ -582,7 +582,8 @@
                         <value>0</value>
                     </parameter>
                 </parameters>
-            </choice>                              
+            </choice>   
+-->                                       
             <choice>
                 <name>VWAP_CHANGE</name>
                 <cluster>DEFAULT</cluster>
@@ -691,11 +692,11 @@
                     <parameter>
                         <name>INPUT</name>
                         <!--value>VWAP,VOLUME,MA3,MA5,MA10,MA3_CHANGE,MA5_CHANGE,MA10_CHANGE,VMA3,VMA5,VMA10,VMA3_CHANGE,VMA5_CHANGE,VMA10_CHANGE,MACD_LINE,MACD_SIGNAL,MACD_DIFF,KDJ_K,KDJ_D,KDJ_J,RSI,WR,BOLL_PERCENT,BOLL_WIDTH</value-->
-                        <value>VWAP,VWAP_CHANGE,VOLUME,VOLUME_CNG,MA3,MA5,MA10,MA3_CHANGE,MA5_CHANGE,MA10_CHANGE,VMA3,VMA5,VMA10,VMA3_CHANGE,VMA5_CHANGE,VMA10_CHANGE,MACD_LINE,MACD_SIGNAL,MACD_DIFF,KDJ_K,KDJ_D,KDJ_J,RSI,WR,BOLL_PERCENT,BOLL_WIDTH</value>
+                        <value>OPEN,HIGH,LOW,CLOSE,VOLUME,AMOUNT</value>
                     </parameter>
                     <parameter>
                         <name>OUTPUT</name>
-                        <value>VWAP</value>
+                        <value>PRC_AVE</value>
                     </parameter>
                 </parameters>
             </choice>
@@ -711,11 +712,11 @@
                 <parameters>
                     <parameter>
                         <name>ACTUAL_OUTPUT</name>
-                        <value>VWAP</value>
+                        <value>HIGH,LOW,PRC_AVE</value>
                     </parameter>
                     <parameter>
                         <name>PREDICTED_OUTPUT</name>
-                        <value>VWAP</value>
+                        <value>PRC_AVE</value>
                     </parameter>
                 </parameters>
             </choice>

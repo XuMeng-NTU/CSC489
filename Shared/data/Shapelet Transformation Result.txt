@@ -1,0 +1,495 @@
+600004
+Mean Absolute Error: 0.03461826733864918
+Root mean squared error: 0.06617003551826463
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600005
+Mean Absolute Error: 0.11126707329389665
+Root mean squared error: 0.13998285512278397
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600006
+Mean Absolute Error: 0.09863834121559334
+Root mean squared error: 0.16766677793270174
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600007
+Mean Absolute Error: 0.02136335323931446
+Root mean squared error: 0.026631411514666622
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600008
+Mean Absolute Error: 0.15881003228582088
+Root mean squared error: 0.1989840141328069
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600009
+Mean Absolute Error: 0.10126910813001402
+Root mean squared error: 0.12617992520943727
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600010
+Mean Absolute Error: 0.10087477856549958
+Root mean squared error: 0.12350115902021656
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600011
+Mean Absolute Error: 0.15282016080936595
+Root mean squared error: 0.19647866569722436
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600012
+Mean Absolute Error: 0.01628879609554939
+Root mean squared error: 0.021874634142763902
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600016
+Mean Absolute Error: 0.08588938519649175
+Root mean squared error: 0.10607596218825122
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600017
+Mean Absolute Error: 0.023187276710861602
+Root mean squared error: 0.03294819237233204
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600018
+Mean Absolute Error: 0.027028853241154168
+Root mean squared error: 0.043395534333936434
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600019
+Mean Absolute Error: 0.11743649511749384
+Root mean squared error: 0.1481321222736067
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600020
+Mean Absolute Error: 0.01752145166379732
+Root mean squared error: 0.024608456602150733
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600021
+Mean Absolute Error: 0.03509603162506872
+Root mean squared error: 0.07926863704328116
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600022
+Mean Absolute Error: 0.1144696655470844
+Root mean squared error: 0.13712816582095586
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600026
+Mean Absolute Error: 0.02309889510359791
+Root mean squared error: 0.02758485849937248
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600027
+Mean Absolute Error: 0.20235481428106142
+Root mean squared error: 0.2548064074797938
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600028
+Mean Absolute Error: 0.030825224524435854
+Root mean squared error: 0.030825224524435854
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600029
+Mean Absolute Error: 0.10422404638684601
+Root mean squared error: 0.1361283568463783
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600030
+Mean Absolute Error: 0.10639678454387891
+Root mean squared error: 0.13627739116409088
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600031
+Mean Absolute Error: 0.10541447987750432
+Root mean squared error: 0.12669837168121473
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600033
+Mean Absolute Error: 0.01922423971339395
+Root mean squared error: 0.027695836316620967
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600035
+Mean Absolute Error: 0.019319283962945483
+Root mean squared error: 0.024728195658508312
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600036
+Mean Absolute Error: 0.11675366594054817
+Root mean squared error: 0.14255947837431637
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600037
+Mean Absolute Error: 0.10662107430115723
+Root mean squared error: 0.13175242493861397
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600038
+Mean Absolute Error: 0.11265205165297379
+Root mean squared error: 0.13394105671734305
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600039
+Mean Absolute Error: 0.10092341100664465
+Root mean squared error: 0.11947647930549889
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600048
+Mean Absolute Error: 0.1424579338507599
+Root mean squared error: 0.16351599951429552
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600050
+Mean Absolute Error: 0.10677099306360875
+Root mean squared error: 0.12856725136468597
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600051
+Mean Absolute Error: 0.08559737276231259
+Root mean squared error: 0.13774650043012468
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600052
+Mean Absolute Error: 0.021785592461953454
+Root mean squared error: 0.028429921728169657
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600053
+Mean Absolute Error: 0.03374922984798597
+Root mean squared error: 0.046938952357199804
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600054
+Mean Absolute Error: 0.02537689446560549
+Root mean squared error: 0.036173681913873
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600055
+Mean Absolute Error: 0.05466926441039261
+Root mean squared error: 0.08877867090465151
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600056
+Mean Absolute Error: 0.1490257676664879
+Root mean squared error: 0.18438651956715768
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600057
+Mean Absolute Error: 0.09253232049928277
+Root mean squared error: 0.139859031285434
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600058
+Mean Absolute Error: 0.07384700049537518
+Root mean squared error: 0.09359547706602456
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600059
+Mean Absolute Error: 0.10144402827938516
+Root mean squared error: 0.12568451221743274
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600061
+Mean Absolute Error: 0.10049679398542284
+Root mean squared error: 0.14507448462706526
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600062
+Mean Absolute Error: 0.11342508531179153
+Root mean squared error: 0.13883363964471607
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600063
+Mean Absolute Error: 0.08881561396604712
+Root mean squared error: 0.11914009470341848
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600064
+Mean Absolute Error: 0.17663588619533632
+Root mean squared error: 0.2521506432674935
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600066
+Mean Absolute Error: 0.12563540807566984
+Root mean squared error: 0.12741248684980658
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600067
+Mean Absolute Error: 0.1267595977166173
+Root mean squared error: 0.15363303375865214
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600068
+Mean Absolute Error: 0.10773752243952212
+Root mean squared error: 0.13801690753944468
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600069
+Mean Absolute Error: 0.1515156660077083
+Root mean squared error: 0.18127613692567243
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600070
+Mean Absolute Error: 0.04414276888135464
+Root mean squared error: 0.07246808705721923
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600071
+Mean Absolute Error: 0.040572992091140285
+Root mean squared error: 0.055504358087234806
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600072
+Mean Absolute Error: 0.09972586390735128
+Root mean squared error: 0.12887344708988524
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600073
+Mean Absolute Error: 0.12506889458625398
+Root mean squared error: 0.13783639753761542
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600074
+Mean Absolute Error: 0.12920753411048663
+Root mean squared error: 0.17288252902700016
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600075
+Mean Absolute Error: 0.09702482029660289
+Root mean squared error: 0.12366346755230517
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600076
+Mean Absolute Error: 0.08006579428266573
+Root mean squared error: 0.11878257056100987
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600077
+Mean Absolute Error: 0.0728615507004325
+Root mean squared error: 0.09747851882585233
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600078
+Mean Absolute Error: 0.10294037435689128
+Root mean squared error: 0.12281366820077734
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600079
+Mean Absolute Error: 0.10126234249163835
+Root mean squared error: 0.12415581058209067
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600080
+Mean Absolute Error: 0.09711600623509777
+Root mean squared error: 0.12527436584185675
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600081
+Mean Absolute Error: 0.01982658336414192
+Root mean squared error: 0.023680673489978352
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600082
+Mean Absolute Error: 0.10954446390425909
+Root mean squared error: 0.15589995185888253
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600083
+Mean Absolute Error: 0.017019456440533803
+Root mean squared error: 0.023281106021573156
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600084
+Mean Absolute Error: 0.05278726137222844
+Root mean squared error: 0.08709428163834092
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600085
+Mean Absolute Error: 0.09682562779972488
+Root mean squared error: 0.11783762993130294
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600086
+Mean Absolute Error: 0.09896836578131382
+Root mean squared error: 0.12765659785367972
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600087
+Mean Absolute Error: 0.16176811882558534
+Root mean squared error: 0.21049614790458443
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600088
+Mean Absolute Error: 0.11815945386482427
+Root mean squared error: 0.14755667628016628
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600089
+Mean Absolute Error: 0.11655854982864494
+Root mean squared error: 0.1411551881790642
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600090
+Mean Absolute Error: 0.129250271594657
+Root mean squared error: 0.1432288283417783
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600091
+Mean Absolute Error: 0.024392693835510532
+Root mean squared error: 0.02917356236852607
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600093
+Mean Absolute Error: 0.03519498927883978
+Root mean squared error: 0.05057562450670515
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600094
+Mean Absolute Error: 0.0453279900229888
+Root mean squared error: 0.07835258110689541
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600095
+Mean Absolute Error: 0.20869494682858447
+Root mean squared error: 0.2273401960478506
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600096
+Mean Absolute Error: 0.07397988831017865
+Root mean squared error: 0.09624136996264525
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600097
+Mean Absolute Error: 0.0351909453208871
+Root mean squared error: 0.06918945298917928
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600098
+Mean Absolute Error: 0.13167820171876174
+Root mean squared error: 0.17740261194177556
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600099
+Mean Absolute Error: 0.02800121966465662
+Root mean squared error: 0.03281996639182678
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600100
+Mean Absolute Error: 0.10804867757404284
+Root mean squared error: 0.13502773498280807
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600101
+Mean Absolute Error: 0.14696466464225957
+Root mean squared error: 0.1783102467722705
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600102
+Mean Absolute Error: 0.2735595613509578
+Root mean squared error: 0.31768489792511945
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600103
+Mean Absolute Error: 0.04037507858873296
+Root mean squared error: 0.06830348562545925
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600104
+Mean Absolute Error: 0.09540392627936363
+Root mean squared error: 0.11642403414350239
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600105
+Mean Absolute Error: 0.05920450180100254
+Root mean squared error: 0.09923627031534853
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600106
+Mean Absolute Error: 0.18125873207940177
+Root mean squared error: 0.22705710525214529
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600107
+Mean Absolute Error: 0.13690973577061838
+Root mean squared error: 0.19335837656258156
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600108
+Mean Absolute Error: 0.09070673040815545
+Root mean squared error: 0.11680897878499555
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600109
+Mean Absolute Error: 0.09055406873421942
+Root mean squared error: 0.11502865550262142
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600110
+Mean Absolute Error: 0.12927982774847646
+Root mean squared error: 0.1658641980857086
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600111
+Mean Absolute Error: 0.16273642771872412
+Root mean squared error: 0.18192928508960318
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600112
+Mean Absolute Error: 0.09701268374278334
+Root mean squared error: 0.11787353589348563
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600113
+Mean Absolute Error: 0.1474484408235693
+Root mean squared error: 0.171446535851626
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600114
+Mean Absolute Error: 0.0946529576562101
+Root mean squared error: 0.11726440555938052
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600115
+Mean Absolute Error: 0.10283534388494545
+Root mean squared error: 0.12947411537185163
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600116
+Mean Absolute Error: 0.09942543547957006
+Root mean squared error: 0.12146491403383114
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600117
+Mean Absolute Error: 0.04735457178133795
+Root mean squared error: 0.07825196233434882
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600118
+Mean Absolute Error: 0.11017272400376513
+Root mean squared error: 0.14518961109201403
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600119
+Mean Absolute Error: 0.07379863159231417
+Root mean squared error: 0.10469902631297448
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600120
+Mean Absolute Error: 0.11020637515338695
+Root mean squared error: 0.1457796301749313
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600121
+Mean Absolute Error: 0.04152499862639588
+Root mean squared error: 0.057621431879771964
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0
+600122
+Mean Absolute Error: 0.10121311501910218
+Root mean squared error: 0.14922228566668902
+Percentage Correct: 0.0
+Percentage Incorrect: 0.0

@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 import preparer.data.NormalizedDataPair;
+import util.ticker.TickerRetriever;
 
 /**
  *
@@ -16,6 +17,30 @@ import preparer.data.NormalizedDataPair;
 public class Application {
     
     
+    public static void auto(){
+        List<String> ticker = TickerRetriever.retrieve(TickerRetriever.FOLDER);
+        
+        Controller preparer = Controller.getInstance();
+        
+        //List<List<NormalizedDataPair>> resultHolders = new ArrayList<>();
+        
+        for(int i=1;i<100;i++){
+System.out.println(ticker.get(i));            
+            List<Map<String, Object>> base = Controller.getInstance().clean(ticker.get(i));
+            List<NormalizedDataPair> resultHolder = preparer.prepareForTraining(ticker.get(i), base);
+            
+            preparer.validate(ticker.get(i), resultHolder);
+
+        }
+//        System.out.println("Waiting for prediction");
+//        Scanner input = new Scanner(System.in);
+//        input.next();
+//        for(int i=0;i<100;i++){          
+//            preparer.validate(ticker.get(i), resultHolders.get(i));
+//        }
+            
+    }
+        
     
     public static void main(String[] args){
         
@@ -42,6 +67,8 @@ public class Application {
                 preparer.validate(code, resultHolder);               
             }else if(instruction.equalsIgnoreCase("Q")){
                 System.exit(0);
+            }else if(instruction.equalsIgnoreCase("AUTO")){
+                auto();
             }
 
         }        

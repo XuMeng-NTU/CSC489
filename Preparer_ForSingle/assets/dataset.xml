@@ -691,11 +691,11 @@
                 <parameters>
                     <parameter>
                         <name>INPUT</name>
-                        <value>VWAP_CHANGE,VOLUME_CNG,MA3_CHANGE,MA5_CHANGE,MA10_CHANGE,VMA3_CHANGE,VMA5_CHANGE,VMA10_CHANGE,MACD_LINE,MACD_SIGNAL,MACD_DIFF,KDJ_K,KDJ_D,KDJ_J,RSI,WR,BOLL_PERCENT,BOLL_WIDTH</value>
+                        <value>OPEN,HIGH,LOW,CLOSE,VOLUME,AMOUNT</value>
                     </parameter>
                     <parameter>
                         <name>OUTPUT</name>
-                        <value>VWAP_CHANGE</value>
+                        <value>PRC_AVE</value>
                     </parameter>
                 </parameters>
             </choice>
@@ -711,11 +711,11 @@
                 <parameters>
                     <parameter>
                         <name>ACTUAL_OUTPUT</name>
-                        <value>VWAP_CHANGE</value>
+                        <value>HIGH,LOW,PRC_AVE</value>
                     </parameter>
                     <parameter>
                         <name>PREDICTED_OUTPUT</name>
-                        <value>VWAP_CHANGE</value>
+                        <value>PRC_AVE</value>
                     </parameter>
                 </parameters>
             </choice>

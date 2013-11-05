@@ -371,7 +371,7 @@
     <configuration>
         <name>NORMALIZER</name>
         <choices>
-<!--            
+            
             <choice>
                 <name>PRICE_GROUP</name>
                 <cluster>DEFAULT</cluster>
@@ -379,7 +379,7 @@
                 <parameters>
                     <parameter>
                         <name>FIELDS</name>
-                        <value>OPEN,HIGH,LOW,CLOSE,PRC_AVE,VWAP</value>
+                        <value>OPEN,HIGH,LOW,CLOSE,PRC_AVE,VWAP,MA3,MA5,MA10</value>
                     </parameter>
                     <parameter>
                         <name>UPPER_BOUND</name>
@@ -417,7 +417,7 @@
                 <parameters>
                     <parameter>
                         <name>FIELDS</name>
-                        <value>VOLUME</value>
+                        <value>VOLUME,VMA3,VMA5,VMA10</value>
                     </parameter>
                     <parameter>
                         <name>UPPER_BOUND</name>
@@ -448,6 +448,7 @@
                     </parameter>
                 </parameters>
             </choice>
+<!--            
             <choice>
                 <name>MACD_GROUP</name>
                 <cluster>DEFAULT</cluster>
@@ -689,12 +690,12 @@
                 <parameters>
                     <parameter>
                         <name>INPUT</name>
-                        <value>DATE,OPEN,HIGH,LOW,CLOSE,VOLUME,AMOUNT</value>
+                        <value>DATE,PRC_AVE,MA3,MA3_CHANGE,MA5,MA5_CHANGE,MA10,MA10_CHANGE,MACD_LINE,MACD_SIGNAL,KDJ_K,KDJ_D,KDJ_J,RSI,WR,BOLL_PERCENT,BOLL_WIDTH</value>
                         <!--value>VWAP,VOLUME,MA3,MA5,MA10,VMA3,VMA5,VMA10,MACD_LINE,MACD_SIGNAL,MACD_DIFF,KDJ_K,KDJ_D,KDJ_J,RSI,WR,BOLL_PERCENT,BOLL_WIDTH</value-->
                     </parameter>
                     <parameter>
                         <name>OUTPUT</name>
-                        <value>VWAP_CHANGE</value>
+                        <value>PRC_AVE</value>
                     </parameter>
                 </parameters>
             </choice>
@@ -710,11 +711,11 @@
                 <parameters>
                     <parameter>
                         <name>ACTUAL_OUTPUT</name>
-                        <value>VWAP_CHANGE_CATEGORY</value>
+                        <value>HIGH,LOW,PRC_AVE</value>
                     </parameter>
                     <parameter>
                         <name>PREDICTED_OUTPUT</name>
-                        <value>VWAP_CHANGE_CATEGORY</value>
+                        <value>PRC_AVE</value>
                     </parameter>
                 </parameters>
             </choice>
